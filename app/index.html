@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link"> Certificates</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-picture-container">
+                <img id="profilePic" src="C:\Users\Jenny Mae\OneDrive\Documents\Students\diagrams\pic.jpg" width="200" alt="Profile Picture" class="profile-picture">
+                <label for="profilePicUpload" class="upload-badge">📷</label>
+                <input type="file" id="profilePicUpload" accept="image/*" style="display: none;">
+            </div>
+            <h1><span>Jenny Mae P. Perono</span></h1>
+            <p>System Analyst | Problem Solver | Tech Writter</p>
+            <a href="#about" class="btn btn-primary">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                       I'm Jenny Mae, a dedicated System Analyst, Problem Solver, and Tech Writer passionate about transforming ideas into structured, efficient, and user-focused solutions. With a strong foundation in system analysis, documentation, and technology-driven processes, I aim to bridge technical concepts and practical implementation to create meaningful digital experiences.
+                    </p>
+                    <p>
+                        My journey in technology has strengthened my ability to analyze requirements, solve complex challenges, and produce clear and organized technical documentation. I continuously improve my skills and stay updated with evolving technologies to deliver reliable, innovative, and impactful solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p1.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.1.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.2.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.3.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.4.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.5.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.6.png" alt="Project 1" data-project-id="1">
+                        <img class="project-img" src="p1.7.png" alt="Project 1" data-project-id="1">
+                        <input type="file" id="project-upload-1" class="project-upload" data-project-id="1" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>LifePulse</h3>
+                    <p>Blood Donation System<br>Saving Lives, One Donation at a time</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="1">View Project</a>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p2.png" alt="Project 2" data-project-id="2">
+                        <img class="project-img" src="p2.1.png" alt="Project 2" data-project-id="2">
+                        <img class="project-img" src="p2.2.png" alt="Project 2" data-project-id="2">
+                        <img class="project-img" src="p2.3.png" alt="Project 2" data-project-id="2">
+                        <input type="file" class="project-upload" data-project-id="2" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>Secure Registration and Login System</h3>
+                    <p>using bcrypt Hashing Algorithm. A system that secures user accounts by hashing passwords with bcrypt before storing them in the database.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="2">View Project</a>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p3.png" alt="Project 3" data-project-id="3">
+                        <img class="project-img" src="p3.1.png" alt="Project 3" data-project-id="3">
+                        <img class="project-img" src="p3.2.png" alt="Project 3" data-project-id="3">
+                        <img class="project-img" src="p3.3.png" alt="Project 3" data-project-id="3">
+                        <img class="project-img" src="p3.4.png" alt="Project 3" data-project-id="3">
+                        <input type="file" class="project-upload" data-project-id="3" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>Secure Registration and Login System</h3>
+                    <p>using Hash, Salt, and Pepper. A system that protects user passwords by applying hashing, salt, and pepper techniques before storing them to enhance security and prevent unauthorized access.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="3">View Project</a>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p4.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.1.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.2.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.3.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.5.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.6.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.7.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.8.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.9.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.10.jpg" alt="Project 4" data-project-id="4">
+                        <img class="project-img" src="p4.11.jpg" alt="Project 4" data-project-id="4">
+                        <input type="file" class="project-upload" data-project-id="4" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>BananaGuard</h3>
+                    <p>Smart Banana Disease Detection</p>
+                    <p>helps detect banana plant diseases early using machine learning and supports better crop monitoring.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="4">View Project</a>
+                </div>
+
+
+                  <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p5.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.6.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.1.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.2.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.3.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.4.png" alt="Project 5" data-project-id="5">
+                        <img class="project-img" src="p5.5.png" alt="Project 5" data-project-id="5">                     
+                        <input type="file" class="project-upload" data-project-id="5" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>Playmate</h3>
+                    <p>Learn.Play.Master Chess</p>
+                    <p>web-based chess app that helps users learn, practice, and improve their chess skills.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="5">View Project</a>
+                </div>
+
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="poster.png" alt="Project 5.1" data-project-id="5.1">
+                         <input type="file" class="project-upload" data-project-id="5.1" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>Playmate</h3>
+                    <p>Learn.Play.Master Chess</p>
+                    <p>Poster</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="5.1">View Project</a>
+                </div>
+
+
+                
+                 <div class="project-card">
+                    <div class="project-image">
+                         <video id="video-5-2" src="v1.mp4" data-project-id="5.2" controls muted playsinline style="width:100%; cursor:pointer; height: 100%;">
+                          </video>
+                         <input type="file" class="project-upload" data-project-id="5.2" accept="video/*" multiple style="display: none;">
+                    </div>
+                    <h3>Playmate</h3>
+                    <p>Video Promotion</p>
+                </div>
+
+
+
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p6.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.1.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.2.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.3.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.4.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.5.png" alt="Project 6" data-project-id="6">    
+                        <img class="project-img" src="p6.6.png" alt="Project 6" data-project-id="6">   
+                        <img class="project-img" src="p6.7.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.8.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.9.png" alt="Project 6" data-project-id="6">
+                        <img class="project-img" src="p6.10.png" alt="Project 6" data-project-id="6">
+
+                        <input type="file" class="project-upload" data-project-id="6" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>WellNest</h3>
+                    <p>Smart Wellnest Scheduler</p>
+                    <p>build healthier habits with personalized wellness scheduling.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="6">View Project</a>
+                </div>
+                
+
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img class="project-img" src="p7.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.1.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.2.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.3.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.4.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.5.png" alt="Project 7" data-project-id="7">    
+                        <img class="project-img" src="p7.6.png" alt="Project 7" data-project-id="7">   
+                        <img class="project-img" src="p7.7.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.8.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.9.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.10.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.11.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.12.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.13.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.14.png" alt="Project 7" data-project-id="7">
+                        <img class="project-img" src="p7.15.png" alt="Project 7" data-project-id="7">
+                        <input type="file" class="project-upload" data-project-id="7" accept="image/*" multiple style="display: none;">
+                    </div>
+                    <h3>COOPNEXUS</h3>
+                    <p>Capstone Project Title</p>
+                    <p>a secure, blockchain-based system that simplifies cooperative management by handling membership, loans, payments, attendance, and elections in one platform.</p>
+                    <a href="#" class="btn btn-secondary btn-view-project" data-project-id="7">View Project</a>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges & Certificates Section -->
+    <section id="certificates" class="section certificates">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img class="project-img" src="c1.png" alt="Certificate 1" data-project-id="1" style="height: 200px; width: 300px;">
+                    <h3>Certificate of Participation</h3>
+                    <p>Technopreneurship</p>
+                    <small>May 21, 2026</small>
+                </div>
+
+                <div class="certificate-card">
+                   <img class="project-img" src="c2.png" alt="Certificate 2" data-project-id="2" style="height: 200px; width: 300px;">
+                    <h3>Certificate of Course Completion</h3>
+                    <p>CCNA:Switching, Routing and Wireless Essentials</p>
+                    <small>December 02, 2025</small>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="achievement-image-container">
+                        <img class="achievement-img" src="a1.png" alt="Achievement 1" data-achievement-id="1">
+                        <input type="file" class="achievement-upload" data-achievement-id="1" accept="image/*" style="display: none;">
+                    </div>
+                    <h3 class="achievement-title" contenteditable="true">Level App</h3>
+                    <p class="achievement-desc" contenteditable="true">Technopreneurship Pitching Presentation</p>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-image-container">
+                        <img class="achievement-img" src="a2.png" alt="Achievement 2" data-achievement-id="2">
+                        <input type="file" class="achievement-upload" data-achievement-id="2" accept="image/*" style="display: none;">
+                    </div>
+                    <h3 class="achievement-title" contenteditable="true">Capstone Outline Defense</h3>
+                    <p class="achievement-desc" contenteditable="true">Defended</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="perono.jennymae@dnsc.edu.ph">perono.jennymae@dnsc.edu.ph</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p><a href="09502167718">09502167718</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>Davao Del Norte, Philippines</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="socials">
+                            <a href="https://www.facebook.com/jenime.perono/" target="_blank">Facebook</a>
+                            <a href="https://github.com/peronojennymae-blip" target="_blank">GitHub</a>
+                            <a href="https://www.instagram.com/bearice_j/?hl=en" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jenny Mae P. Perono. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Project Images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-container">
+            <button class="lightbox-nav prev-lightbox">❮</button>
+            <div class="lightbox-image-wrapper">
+                <img id="lightbox-image" class="lightbox-content" src="" alt="">
+            </div>
+            <button class="lightbox-nav next-lightbox">❯</button>
+        </div>
+        <div class="lightbox-counter">
+            <span id="current-image">1</span> / <span id="total-images">1</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
